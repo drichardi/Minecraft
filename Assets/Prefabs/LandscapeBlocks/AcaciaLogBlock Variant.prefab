@@ -10,7 +10,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 313305248330988782, guid: 3bda2cca27fa245a2ae74f1de243a14b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 313305248330988782, guid: 3bda2cca27fa245a2ae74f1de243a14b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 313305248330988782, guid: 3bda2cca27fa245a2ae74f1de243a14b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -99,6 +103,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1086148001245226580, guid: 3bda2cca27fa245a2ae74f1de243a14b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8246642624997658202}
+    - targetCorrespondingSourceObject: {fileID: 1086148001245226580, guid: 3bda2cca27fa245a2ae74f1de243a14b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2600647312957189198}
   m_SourcePrefab: {fileID: 100100000, guid: 3bda2cca27fa245a2ae74f1de243a14b, type: 3}
 --- !u!1 &822228612917571416 stripped
 GameObject:
@@ -126,3 +133,28 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2600647312957189198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 822228612917571416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41823443bf0fa47d1b2ba0f407615dda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hardness: 5
+  health: 20
+  destroyTextures:
+  - {fileID: 2800000, guid: 259e234a9a8f645f6a6cfb164b4166e8, type: 3}
+  - {fileID: 2800000, guid: b4fd692b918d84967a19700ff1f75db2, type: 3}
+  - {fileID: 2800000, guid: 3478791751e28416f8efe1feacfa107b, type: 3}
+  - {fileID: 2800000, guid: 10f5e8c26ec1848b6beca47238d2bcb8, type: 3}
+  - {fileID: 2800000, guid: db53fc96c89714402b1ff55f8c11b6f6, type: 3}
+  - {fileID: 2800000, guid: 61de5ba72a6ea4a2984f3da8ccc3709e, type: 3}
+  - {fileID: 2800000, guid: bdd6f9ea0b72f4102a09d682ae69b736, type: 3}
+  - {fileID: 2800000, guid: 1ff4ae07dc4fd4c77b7f4550fe88c357, type: 3}
+  - {fileID: 2800000, guid: 193466e4284054ca980fefb29b180c43, type: 3}
+  - {fileID: 2800000, guid: c5073589fb0d14aaea343a96f4ef501d, type: 3}

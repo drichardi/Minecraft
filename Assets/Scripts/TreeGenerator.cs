@@ -4,24 +4,26 @@ using UnityEngine;
 
 public class TreeGenerator : MonoBehaviour
 {
-    public GameObject trunkBlock;
-    public GameObject leavesBlock;
+    [SerializeField] GameObject trunkPrefab;
+    [SerializeField] GameObject leafPrefab;
 
-    public int minHeight = 5;
-    public int maxHeight = 12;
-
-    private void Awake()
-    {
-        Debug.Log("Awakening Tree");
-    }
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("Calling Tree Function");
-        CreateTree();
-        Debug.Log("Finished Tree Function");
-    }
+        GrowTree(new Vector3Int(3, 0, 3));
+        GrowTree(new Vector3Int(-2, 0, 5));
 
+        int x, y, z;
+
+        for (int i = 0; i < 5; i++)
+        {
+            x = Random.Range(-40, 40);
+            y = 0;
+            z = Random.Range(-40, 40);
+            GrowTree(new Vector3Int(x, y, z));
+        }
+
+    }
 
     // Update is called once per frame
     void Update()
@@ -29,118 +31,39 @@ public class TreeGenerator : MonoBehaviour
         
     }
 
-    void CreateTree()
+    void GrowTree(Vector3Int pos)
     {
-        Debug.Log("Starting tree build");
-
-        // place trunk
-        Vector3Int growPoint = new Vector3Int(3, 1, -3);
+        Vector3Int growPos = pos;
         GameObject tree = new GameObject("Tree");
-        tree.transform.position = growPoint;
+        tree.transform.position = growPos;
 
-        Instantiate(trunkBlock, growPoint, Quaternion.identity, tree.transform);
+        int height = Random.Range(5, 15);
+        Vector3Int[] branchDirections = {   Vector3Int.forward,
+                                            Vector3Int.right,
+                                            Vector3Int.back,
+                                            Vector3Int.left
+                                        };
 
-        // randomize total height
-        int height = Random.Range(minHeight, maxHeight + 1);
-
-        Debug.Log("Height is " + height + ", growing up!");
-
-        // grow straight up to height
-        for (int i = growPoint.y; i < growPoint.y + height; i++)
+        for (int i = 0; i < height; i++)
         {
-            growPoint += new Vector3Int(0, 1, 0);
-            Instantiate(trunkBlock, growPoint, Quaternion.identity, tree.transform);
-            Debug.Log("Generated trunk section " + i);
-            // Randomly grow branches 10 % chance at each trunk segment
-            if (Random.Range(0f, 1f) > .9f)
+            Instantiate(trunkPrefab, growPos, Quaternion.identity, tree.transform);
+            growPos += Vector3Int.up;
+
+            // chance for branch growth
+            if (Random.Range(0f, 1f) > .6f)
             {
-                Debug.Log("Making a branch!");
-                // choose direction of branch
+                Vector3Int branchPos = growPos;
+                //Debug.Log("Branching!");
+
                 // 0 - forward, 1 - right, 2 - back, 3 - left
-                int branchDir = Random.Range(0, 4);
-                // create growthVector
-                Vector3Int branchGrowthVector = new Vector3Int();
-                switch (branchDir)
-                {
-                    case 0:
-                        branchGrowthVector = new Vector3Int(0, 0, 1);
-                        break;
-                    case 1:
-                        branchGrowthVector = new Vector3Int(1, 0, 0);
-                        break;
-                    case 2:
-                        branchGrowthVector = new Vector3Int(0, 0, -1);
-                        break;
-                    case 3:
-                        branchGrowthVector = new Vector3Int(-1, 0, 0);
-                        break;
-                }
-                // place branch start
-                Vector3Int branchStart = growPoint + branchGrowthVector;
-                Instantiate(trunkBlock, branchStart, Quaternion.identity, tree.transform);
+                Vector3Int branchDir = branchDirections[Random.Range(0, branchDirections.Length)];
+                int branchLength = Random.Range(1, 5);
 
-                // determine length of branch
-                int branchLength = Random.Range(2, maxHeight - minHeight);
-
-                // grow branch
                 while (branchLength > 0)
                 {
-                    // set prevDir to opposite prev branch growth
-                    // prevent choosing the branch to grow backwards into itself
-                    int prevDir = branchDir - 2 >= 0 ? branchDir - 2 : branchDir + 2;
-
-                    // choose direction of branch
-                    // 0 - forward, 1 - right, 2 - back, 3 - left
-                    branchDir = Random.Range(0, 4);
-                    while (prevDir == branchDir)
-                    {
-                        branchDir = Random.Range(0, 4);
-                    }
-
-                    switch (branchDir)
-                    {
-                        case 0:
-                            branchGrowthVector = new Vector3Int(0, 0, 1);
-                            break;
-                        case 1:
-                            branchGrowthVector = new Vector3Int(1, 0, 0);
-                            break;
-                        case 2:
-                            branchGrowthVector = new Vector3Int(0, 0, -1);
-                            break;
-                        case 3:
-                            branchGrowthVector = new Vector3Int(-1, 0, 0);
-                            break;
-                    }
-                    branchStart = branchStart + branchGrowthVector;
-                    Instantiate(trunkBlock, branchStart, Quaternion.identity, tree.transform);
+                    branchPos += branchDir;
+                    Instantiate(trunkPrefab, branchPos, Quaternion.identity, tree.transform);
                     branchLength--;
-                }
-                // place leaves on branch
-                for (int x = branchStart.x - 1; x < branchStart.x + 1; x++)
-                {
-                    for (int y = branchStart.y + 1; y < branchStart.y + 2; y++)
-                    {
-                        for (int z = branchStart.z - 1; z < branchStart.z + 1; z++)
-                        {
-                            Vector3Int leafPlacement = new Vector3Int(x, y, z);
-                            Instantiate(leavesBlock, leafPlacement, Quaternion.identity, tree.transform);
-                        }
-                    }
-                }
-
-            }
-        }
-
-        // place some leaves on top
-        for (int x = growPoint.x - 1; x < growPoint.x + 1; x++)
-        {
-            for (int y = growPoint.y + 1; y < growPoint.y + 2; y++)
-            {
-                for (int z = growPoint.z - 1; z < growPoint.z + 1; z++)
-                {
-                    Vector3Int leafPlacement = new Vector3Int(x, y, z);
-                    Instantiate(leavesBlock, leafPlacement, Quaternion.identity, tree.transform);
                 }
             }
         }
