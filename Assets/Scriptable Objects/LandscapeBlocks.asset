@@ -58,3 +58,6 @@ MonoBehaviour:
   - name: netherquartz_ore
     blockPrefab: {fileID: 834220483443426328, guid: 29ba36942255a40beb0845a5438f3d4d, type: 3}
     hardness: 20
+  - name: acacia_log
+    blockPrefab: {fileID: 822228612917571416, guid: bb8b7a84f60ba6e4bb662afc21316e46, type: 3}
+    hardness: 6
