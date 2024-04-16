@@ -14,15 +14,15 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: d019750a22bd81b4ca17213cb9158412, type: 2}
     - target: {fileID: 6899476969932797131, guid: 128e6bc4c097a46b0837742393aa6081, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6899476969932797131, guid: 128e6bc4c097a46b0837742393aa6081, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6899476969932797131, guid: 128e6bc4c097a46b0837742393aa6081, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 12
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6899476969932797131, guid: 128e6bc4c097a46b0837742393aa6081, type: 3}
       propertyPath: m_LocalRotation.w
@@ -54,7 +54,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8782264629855960441, guid: 128e6bc4c097a46b0837742393aa6081, type: 3}
       propertyPath: m_Name
-      value: AcaciaLeavesBlock (1) Variant
+      value: AcaciaLeavesBlock Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
