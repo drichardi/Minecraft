@@ -1,0 +1,191 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Default Local Group
+  m_EditorClassIdentifier: 
+  m_GroupName: Default Local Group
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 9805a7a4464d542ae9e4fd414ad23b46
+  m_SerializeEntries:
+  - m_GUID: 00324f5f787f244709593164587403cb
+    m_Address: Assets/Textures/block/wet_sponge.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 40bb24c16b5084922925c89a37a82db8
+    m_Address: Assets/Textures/block/wheat_stage0.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e4e52dcbe22dc47b6b4df3b73cd09d63
+    m_Address: Assets/Textures/block/wheat_stage1.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f2cbd2694e0f94e70b253260c13f41de
+    m_Address: Assets/Textures/block/wheat_stage2.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 34724d639602d4575a99568cca21c4ff
+    m_Address: Assets/Textures/block/wheat_stage3.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5b86a926945474fb78d453af59302a7d
+    m_Address: Assets/Textures/block/wheat_stage4.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 26d9f013110eb4bc88f75c2cf77ef8b2
+    m_Address: Assets/Textures/block/wheat_stage5.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 54d03ed2403ab4f16b2c351f8a12345c
+    m_Address: Assets/Textures/block/wheat_stage6.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 808a7f7be287642babf509b2b13cc6df
+    m_Address: Assets/Textures/block/wheat_stage7.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 24a94c4b7375d4d0aa735c5fe38ded71
+    m_Address: Assets/Textures/block/white_concrete.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 99515db20567a4ebfab142df37ac0d3e
+    m_Address: Assets/Textures/block/white_concrete_powder.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fcf0fbae0036a42f2929267a48992d9c
+    m_Address: Assets/Textures/block/white_glazed_terracotta.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5444e85fbe6964d80a201bae77996b08
+    m_Address: Assets/Textures/block/white_shulker_box.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 057f96e49b6f744c2bd77f407ae20ff4
+    m_Address: Assets/Textures/block/white_stained_glass.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ae2380e4a8a084fcfbf39f84af77560a
+    m_Address: Assets/Textures/block/white_stained_glass_pane_top.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: da2d44c4d229b493f9c889db6aef4edb
+    m_Address: Assets/Textures/block/white_terracotta.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0473a2a9dadbe4fb7bc452e5680798e1
+    m_Address: Assets/Textures/block/white_tulip.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 418d3b1455bc149a594b48c1c56bb25f
+    m_Address: Assets/Textures/block/white_wool.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1329ada4efc1b4b46b1820c44744cec0
+    m_Address: Assets/Textures/block/wither_rose.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cc2be69462d7a411a95c579a560b3d15
+    m_Address: Assets/Textures/block/yellow_concrete.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5706e816f49d04399ba3f67bc56e9cd5
+    m_Address: Assets/Textures/block/yellow_concrete_powder.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 133546e80ecb44a86b67c9bc0a1cd8cf
+    m_Address: Assets/Textures/block/yellow_glazed_terracotta.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7631efa422dd6463e800a045a1a5a642
+    m_Address: Assets/Textures/block/yellow_shulker_box.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fde104bd4676a4ecd8288a21971ec2e9
+    m_Address: Assets/Textures/block/yellow_stained_glass.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: eb535a25667c1413a81db000eb7c3679
+    m_Address: Assets/Textures/block/yellow_stained_glass_pane_top.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6c9049ef0ff9d4502a850499d1a229eb
+    m_Address: Assets/Textures/block/yellow_terracotta.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d00826ac0c5dd4ddcb5c76c6880e7669
+    m_Address: Assets/Textures/block/yellow_wool.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 930cc405b0a26486faa2dc3cb0e8b324
+    m_Address: Assets/Textures/block/acacia_log.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b89af45dde6ba4edb8a9cecea0e04ea1
+    m_Address: Assets/Textures/block/acacia_leaves.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3f0be8ad15c3b429581cdb0e3de4dfd4
+    m_Address: Assets/Textures/block/acacia_door_bottom.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4bd83e09edc47407381823879afaf97c
+    m_Address: Assets/Textures/block/acacia_door_top.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f1fa091ad1ec74ece8b191567a6600ef
+    m_Address: Assets/Textures/block
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7e04110d45b764cbf881595fe1119d65
+    m_Address: Assets/Scriptable Objects/DestroyedOverlayTextures.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - destroyDecal
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: de2336c5d877a48c9a14737a7f3f6d0d, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 383f638cce18d4cbca5b7c61653452f4, type: 2}
+    - {fileID: 11400000, guid: 758cf109b3dec4fdda863ccf6c23fcd4, type: 2}

@@ -8,7 +8,6 @@ using UnityEngine.InputSystem;
 
 public class RightRayCast : MonoBehaviour
 {
-    public List<Texture> destroyTextures = new List<Texture>();
     public Landscape landscape;
 
     public int hitDamage = 2;
@@ -41,21 +40,21 @@ public class RightRayCast : MonoBehaviour
         if (Input.GetMouseButtonUp(0) && didHit && hit.distance < 4)
         {
 
-            // TODO Punch block
+          
             Block block = hit.transform.gameObject.GetComponent<Block>();
 
-
-            // TODO Apply hit damage to targetted block
-            block.health -= hitDamage;
-            Debug.Log("Applied " + hitDamage + " to block. Block has " + block.health + " remaining health.");
-
-            // TODO Apply hit material to damaged block
-
-            // TODO Destroy block when block hitpoints 0
-            if (block.health < 0)
+            if (block)
             {
-                Destroy(block.gameObject);
+                block.ChangeHealth(-hitDamage);
+
+                Debug.Log("Applied " + hitDamage + " to block. Block has " + block.currentHealth + " remaining health.");
             }
+            
+            
+
+           
+
+            
         }
     }
 }
