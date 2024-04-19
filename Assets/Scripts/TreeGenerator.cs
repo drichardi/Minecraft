@@ -7,6 +7,8 @@ public class TreeGenerator : MonoBehaviour
     [SerializeField] GameObject trunkPrefab;
     [SerializeField] GameObject leafPrefab;
 
+    List<GameObject> treeBlocks = new List<GameObject>();
+
     // Start is called before the first frame update
     void Start()
     {
@@ -46,8 +48,10 @@ public class TreeGenerator : MonoBehaviour
 
         for (int i = 0; i < height; i++)
         {
-            Instantiate(trunkPrefab, growPos, Quaternion.identity, tree.transform);
+            GameObject trunkblock = Instantiate(trunkPrefab, growPos, Quaternion.identity, tree.transform);
             growPos += Vector3Int.up;
+            // keep track of tree blocks?
+            treeBlocks.Add(trunkblock);
 
             // chance for branch growth
             if (Random.Range(0f, 1f) > .6f)

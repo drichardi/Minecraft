@@ -6,15 +6,19 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Minecraft/Texture Object", order = 2)]
 public class OverlayTextures : ScriptableObject
 {
-    //[Serializable]
-    //public class DestroyedTextures
-    //{
-    //    public Texture texture;
-    //}
-
-    
-
+    // Textures for overlay / destroy textures
     [SerializeField] public Texture[] textures;
 
-     
+    [Serializable]
+    public class FoliageTextures
+    {
+        public string name;
+        public Foliage foliageType;
+        public Texture texture;
+        public Color color;
+    }
+
+    [SerializeField] public FoliageTextures[] f_textures;
+
+   
 }

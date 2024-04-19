@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eb0ef6dd9faeb4d9fa29301229d8a27b, type: 3}
-  m_Name: DestroyedOverlayTextures
+  m_Name: TransparentTextures
   m_EditorClassIdentifier: 
   textures:
   - {fileID: 2800000, guid: 259e234a9a8f645f6a6cfb164b4166e8, type: 3}
@@ -23,3 +23,24 @@ MonoBehaviour:
   - {fileID: 2800000, guid: 1ff4ae07dc4fd4c77b7f4550fe88c357, type: 3}
   - {fileID: 2800000, guid: 193466e4284054ca980fefb29b180c43, type: 3}
   - {fileID: 2800000, guid: c5073589fb0d14aaea343a96f4ef501d, type: 3}
+  f_textures:
+  - name: Grass
+    foliageType: 0
+    texture: {fileID: 2800000, guid: b98c1ac08834747508e1fdcd0da66360, type: 3}
+    color: {r: 0.38915578, g: 0.8773585, b: 0.11173906, a: 1}
+  - name: Tall_Grass_Bottom
+    foliageType: 1
+    texture: {fileID: 2800000, guid: 5b9e02c87731c4b76a062f296f3e2db8, type: 3}
+    color: {r: 0.38915578, g: 0.8773585, b: 0.11173906, a: 1}
+  - name: Tall_Grass_Top
+    foliageType: 2
+    texture: {fileID: 2800000, guid: 7efadea85c3da427999648e9b69e8225, type: 3}
+    color: {r: 0.38915578, g: 0.8773585, b: 0.11173906, a: 1}
+  - name: Vine
+    foliageType: 3
+    texture: {fileID: 2800000, guid: 97fbe116419894c14b81593f2f8307f6, type: 3}
+    color: {r: 0.38915578, g: 0.8773585, b: 0.11173906, a: 1}
+  - name: Orange_Tulip
+    foliageType: 4
+    texture: {fileID: 2800000, guid: 3c1fe40f7f5884794b82a825b7068e48, type: 3}
+    color: {r: 1, g: 1, b: 1, a: 0}

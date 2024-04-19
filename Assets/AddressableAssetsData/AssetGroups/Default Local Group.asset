@@ -177,12 +177,6 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 7e04110d45b764cbf881595fe1119d65
-    m_Address: Assets/Scriptable Objects/DestroyedOverlayTextures.asset
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - destroyDecal
-    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: de2336c5d877a48c9a14737a7f3f6d0d, type: 2}
   m_SchemaSet:
