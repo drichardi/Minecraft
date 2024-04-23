@@ -7,7 +7,7 @@ public class GameTextures : MonoBehaviour
     // create static singleton
     public static GameTextures instance;
     [SerializeField]
-    public static OverlayTextures textures;
+    public OverlayTextures foliageTextures;
 
     private void Awake()
     {

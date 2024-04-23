@@ -44,3 +44,27 @@ MonoBehaviour:
     foliageType: 4
     texture: {fileID: 2800000, guid: 3c1fe40f7f5884794b82a825b7068e48, type: 3}
     color: {r: 1, g: 1, b: 1, a: 0}
+  - name: Pink_Tulip
+    foliageType: 5
+    texture: {fileID: 2800000, guid: c57bfdec76d4f4234a7f8518249beabc, type: 3}
+    color: {r: 1, g: 1, b: 1, a: 0}
+  - name: Red_Tulip
+    foliageType: 6
+    texture: {fileID: 2800000, guid: 877f3156a05194853b94e1384e13afb6, type: 3}
+    color: {r: 1, g: 1, b: 1, a: 0}
+  - name: White_Tulip
+    foliageType: 7
+    texture: {fileID: 2800000, guid: 0473a2a9dadbe4fb7bc452e5680798e1, type: 3}
+    color: {r: 1, g: 1, b: 1, a: 0}
+  - name: Rose_Bush_Bottom
+    foliageType: 8
+    texture: {fileID: 2800000, guid: 3518039f5c813460f92ece949942c5ee, type: 3}
+    color: {r: 1, g: 1, b: 1, a: 0}
+  - name: Rose_Bush_Top
+    foliageType: 9
+    texture: {fileID: 2800000, guid: de3680f2531b542c3a17e3fc9afd8df5, type: 3}
+    color: {r: 1, g: 1, b: 1, a: 0}
+  - name: Rose_Bush_Top
+    foliageType: 10
+    texture: {fileID: 2800000, guid: 1ee95d4c5f7ae4f0aa28680104a8a17f, type: 3}
+    color: {r: 1, g: 1, b: 1, a: 0}
