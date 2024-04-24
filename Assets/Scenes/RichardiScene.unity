@@ -1404,66 +1404,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3764568781160432642, guid: 4cc6edcc11f644cb79fda0f97d48b1ac, type: 3}
   m_PrefabInstance: {fileID: 1881238173}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &152347702
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 47a536157bf6b4a12a182f895ac4c69c, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.8950996
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 47a536157bf6b4a12a182f895ac4c69c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.018
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 47a536157bf6b4a12a182f895ac4c69c, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -5.683
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 47a536157bf6b4a12a182f895ac4c69c, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 47a536157bf6b4a12a182f895ac4c69c, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.000000021855696
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 47a536157bf6b4a12a182f895ac4c69c, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 47a536157bf6b4a12a182f895ac4c69c, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 47a536157bf6b4a12a182f895ac4c69c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 47a536157bf6b4a12a182f895ac4c69c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 47a536157bf6b4a12a182f895ac4c69c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 47a536157bf6b4a12a182f895ac4c69c, type: 3}
-      propertyPath: m_Name
-      value: 5316f5e4b5fa_Stylized_Owl_Chocob
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 47a536157bf6b4a12a182f895ac4c69c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1624194675}
-  m_SourcePrefab: {fileID: 100100000, guid: 47a536157bf6b4a12a182f895ac4c69c, type: 3}
 --- !u!4 &155620956 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4865937665925183100, guid: 557e46d714bff4d819f5bc69cefa39c5, type: 3}
@@ -12161,33 +12101,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 128e6bc4c097a46b0837742393aa6081, type: 3}
---- !u!1 &1624194674 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 47a536157bf6b4a12a182f895ac4c69c, type: 3}
-  m_PrefabInstance: {fileID: 152347702}
-  m_PrefabAsset: {fileID: 0}
---- !u!64 &1624194675
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1624194674}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -8670151273213183110, guid: 47a536157bf6b4a12a182f895ac4c69c, type: 3}
 --- !u!4 &1625921355 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3764568781160432642, guid: 4cc6edcc11f644cb79fda0f97d48b1ac, type: 3}
@@ -17810,4 +17723,3 @@ SceneRoots:
   - {fileID: 795355469}
   - {fileID: 1183541551}
   - {fileID: 2110526220}
-  - {fileID: 152347702}

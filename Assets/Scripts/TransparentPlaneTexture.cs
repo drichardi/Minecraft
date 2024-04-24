@@ -18,11 +18,12 @@ public class TransparentPlaneTexture : MonoBehaviour
 
     private void Awake()
     {
-        overlayTextures = GameTextures.instance.foliageTextures;
+        
     }
     // Start is called before the first frame update
     void Start()
     {
+        overlayTextures = GameTextures.instance.foliageTextures;
         foliage = GetFoliage(foliageType);
         renderer = GetComponent<Renderer>();
         selectedTexture = foliage.texture;
